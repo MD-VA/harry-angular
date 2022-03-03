@@ -1,12 +1,13 @@
 <div class="card">
-  <h1>{{myProduct?.title}}</h1>
+  <h1>{{myProduct?.title | uppercase}}</h1>
   <p>{{myProduct?.description}}</p>
   <img src={{myProduct.imageUrl}} width="100">
-  <p>{{myProduct?.priceTable["XL"]}} $</p>
+  <p>{{myProduct?.priceTable["XL"] | currency: 'EUR'}}</p>
+  <b>{{myProduct?.date | date: 'fullDate'}}</b>
+  <br/>
   <div>
     <b>{{myProduct?.likes}} ❤️ </b>
     <button (click)="onAddLike()">{{myProduct?.isLiked ? "dislike" : "like"}}</button>
-
   </div>
   <div class="size" *ngIf="myProduct.size?.length >= 1">
     <p>The sizes :</p>

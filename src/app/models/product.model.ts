@@ -8,6 +8,7 @@ export class ProductModel {
     public isLiked: boolean,
     public size?: Array<string>,
     public priceTable?: Object,
+    public date?: Date,
   ) {
   }
 }

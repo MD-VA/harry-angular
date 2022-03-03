@@ -1,4 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
+import { timestamp } from 'rxjs';
 import {ProductModel} from "./models/product.model";
 
 @Component({
@@ -19,7 +20,8 @@ export class AppComponent implements OnInit{
         0,
         false,
         ["XL"],
-        {XL: 200}
+        {XL: 200},
+        new Date('2021-12-12')
       ),
       new ProductModel(
         "Peluche Harry potter",
@@ -29,8 +31,8 @@ export class AppComponent implements OnInit{
         0,
         false,
         ["XL", "M"],
-        {XL: 200, M:30}
-
+        {XL: 200, M:30},
+        new Date('2021-12-12')
       ),
       new ProductModel(
         "Peluche Harry potter",
@@ -40,8 +42,8 @@ export class AppComponent implements OnInit{
         0,
         false,
         ["XL", "L", "M"],
-        {XL: 200, L:67, M:20}
-
+        {XL: 200, L:67, M:20},
+        new Date('2021-12-12')
       ),
     ]
   }
