@@ -1,0 +1,20 @@
+.card{
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 8%;
+  width: 20%;
+  display: inline-block;
+  margin: 10px;
+  padding: 10px;
+
+}
+
+.size p{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.sizeText{
+  display: inline-block !important;
+  margin: 0 10px;
+}

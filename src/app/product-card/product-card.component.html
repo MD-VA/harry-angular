@@ -1,0 +1,20 @@
+<div class="card">
+  <h1>{{myProduct?.title}}</h1>
+  <p>{{myProduct?.description}}</p>
+  <img src={{myProduct.imageUrl}} width="100">
+  <p>{{myProduct?.priceTable["XL"]}} $</p>
+  <div>
+    <b>{{myProduct?.likes}} ❤️ </b>
+    <button (click)="onAddLike()">{{myProduct?.isLiked ? "dislike" : "like"}}</button>
+
+  </div>
+  <div class="size" *ngIf="myProduct.size?.length >= 1">
+    <p>The sizes :</p>
+    <select name="cars" id="cars">
+      <option *ngFor="let item of myProduct.size" value={{item}}>{{item}}</option>
+    </select>
+<!--    <p *ngFor="let item of myProduct.size; index as i;" class="sizeText">{{item}}</p>-->
+  </div>
+</div>
+
+
