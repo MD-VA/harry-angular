@@ -6,7 +6,7 @@
   <h1>The first page</h1>
     <app-home></app-home>
   <div class="card">
-    <app-product-card *ngFor="let product of product" [myProduct]="product"></app-product-card>
+    <app-product-card *ngFor="let product of (product | sortByDate: 'asc')" [myProduct]="product"></app-product-card>
   </div>
 </div>
 

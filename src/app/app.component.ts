@@ -16,6 +16,17 @@ export class AppComponent implements OnInit{
         "Peluche Harry potter",
         "lortetstem ipsue kjsnefk",
         "https://media.auchan.fr/42f06d04-cd4f-4cf0-8d86-48c56c856e31_1200x1200/B2CD/",
+        200,
+        0,
+        false,
+        ["XL", "M"],
+        {XL: 200, M:30},
+        new Date('2021-01-01')
+      ),
+      new ProductModel(
+        "Peluche Harry potter",
+        "lortetstem ipsue kjsnefk",
+        "https://media.auchan.fr/42f06d04-cd4f-4cf0-8d86-48c56c856e31_1200x1200/B2CD/",
         67,
         0,
         false,
@@ -32,7 +43,7 @@ export class AppComponent implements OnInit{
         false,
         ["XL", "M"],
         {XL: 200, M:30},
-        new Date('2021-12-12')
+        new Date('2021-01-12')
       ),
       new ProductModel(
         "Peluche Harry potter",
@@ -43,7 +54,7 @@ export class AppComponent implements OnInit{
         false,
         ["XL", "L", "M"],
         {XL: 200, L:67, M:20},
-        new Date('2021-12-12')
+        new Date('2021-12-01')
       ),
     ]
   }
